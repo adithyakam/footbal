@@ -1,0 +1,44 @@
+ https://www.thesportsdb.com/api/v1/json/1/search_all_leagues.php?c=England&s=Soccer --->for all leagues 
+https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=Arsenal ----> team
+https://www.thesportsdb.com/api/v1/json/{APIKEY}/searchteams.php?sname={TeamShortCode}
+
+https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=Danny%20Welbeck
+https://www.thesportsdb.com/api/v1/json/{APIKEY}/searchplayers.php?t={TeamName}&p={Playername} ---for player name
+
+https://www.thesportsdb.com/api/v1/json/1/searchevents.php?e=Arsenal_vs_Chelsea
+https://www.thesportsdb.com/api/v1/json/1/searchfilename.php?e=English_Premier_League_2015-04-26_Arsenal_vs_Chelsea  ---->event
+
+
+https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League
+https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?s=Soccer&c=Spain                    -----list all team
+
+
+https://www.thesportsdb.com/api/v1/json/1/search_all_leagues.php?c=England
+https://www.thesportsdb.com/api/v1/json/1/search_all_leagues.php?c=England&s=Soccer        ------ list all league
+
+https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=133604    ----- team det by ID
+
+https://www.thesportsdb.com/api/v1/json/1/lookupplayer.php?id=34145937---- player details by id 
+
+
+https://www.thesportsdb.com/api/v1/json/1/lookuphonors.php?id=34147178 player honors by ID
+
+former team ---> https://www.thesportsdb.com/api/v1/json/1/lookupformerteams.php?id=34147178
+
+https://www.thesportsdb.com/api/v1/json/1/lookuptable.php?l=4328&s=1819
+https://www.thesportsdb.com/api/v1/json/1/lookuptable.php?l=4328&s=1213 ----> lookup table by league id and season
+
+https://www.thesportsdb.com/api/v1/json/1/eventsnext.php?id=133602 necxt 5 event by team id
+
+https://www.thesportsdb.com/api/v1/json/1/eventsnextleague.php?id=4328 next 15 events by leagueID
+
+https://www.thesportsdb.com/api/v1/json/1/eventslast.php?id=133602  last 5event by team id
+
+
+Original Image - https://www.thesportsdb.com/images/media/league/fanart/xpwsrw1421853005.jpg
+Small 250px Image - https://www.thesportsdb.com/images/media/league/fanart/xpwsrw1421853005.jpg/preview ---images
+
+
+
+
+
