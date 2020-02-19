@@ -7,19 +7,22 @@ nextFixtures = (fixtures, tableDiv) => {
   fixtures.forEach(fixture => {
     tableDiv.innerHTML = "";
 
-    const div = document.createElement("div");
-    const Imagediv = document.createElement("div");
+    const vs = document.createElement("span");
 
-    const div1 = document.createElement("span");
-    const div2 = document.createElement("span");
+    const textDiv = document.createElement("span");
+    const textDiv2 = document.createElement("span");
+    const imgDiv = document.createElement("span");
+    const imgDiv2 = document.createElement("span");
+
+    const con = document.createElement("div");
+    const container = document.createElement("div");
+
     const DateDiv = document.createElement("div");
+    const timeDIv = document.createElement("div");
+    const localTime = document.createElement("div");
+
     const img1 = document.createElement("img");
     const img2 = document.createElement("img");
-
-    const t1 = document.createElement("span");
-    const t2 = document.createElement("span");
-    const vs = document.createElement("span");
-    const vs2 = document.createElement("span");
 
     img1.className = "imag";
     img2.className = "imag";
@@ -50,33 +53,49 @@ nextFixtures = (fixtures, tableDiv) => {
         Teams.teams.forEach(element => {
           if (i === 0) {
             ar = element.strTeamBadge + "\\preview";
-            // console.log(ar);
             img2.src = ar;
           }
           i++;
         });
       })
       .catch(err => console.log(err));
-    vs2.appendChild(document.createTextNode("    "));
 
-    div1.appendChild(img1);
-    div2.appendChild(img2);
-    div1.appendChild(vs2);
-    div1.appendChild(div2);
-    Imagediv.appendChild(div1);
-
-    t1.appendChild(document.createTextNode(fixture.strHomeTeam));
+    textDiv.appendChild(document.createTextNode(fixture.strHomeTeam));
     vs.appendChild(document.createTextNode(" vs "));
-    t2.appendChild(document.createTextNode(fixture.strAwayTeam));
+    textDiv2.appendChild(document.createTextNode(fixture.strAwayTeam));
     DateDiv.appendChild(document.createTextNode(fixture.dateEvent));
+    timeDIv.appendChild(document.createTextNode(fixture.strTime + " CET"));
+    localTime.appendChild(
+      document.createTextNode("Local TIme: " + fixture.strTimeLocal)
+    );
 
-    t1.appendChild(vs);
-    t1.appendChild(t2);
+    DateDiv.className = "cen";
+    con.className = "cen";
 
-    div.appendChild(t1);
-    Imagediv.appendChild(div);
-    div.appendChild(DateDiv);
-    maindiv.appendChild(Imagediv);
+    imgDiv.appendChild(img1);
+    imgDiv2.appendChild(img2);
+
+    imgDiv.appendChild(textDiv).appendChild(vs);
+    textDiv2.appendChild(imgDiv2);
+
+    imgDiv.appendChild(textDiv2);
+
+    con
+      .appendChild(imgDiv)
+      .appendChild(DateDiv)
+      .appendChild(timeDIv)
+      .appendChild(localTime);
+
+    con.style.border = "1px solid black";
+    con.style.width = "30%";
+
+    container.appendChild(con);
+
+    container.style.margin = "auto auto";
+
+    container.style.margin = "1.5rem";
+
+    maindiv.appendChild(container);
   });
   tableDiv.appendChild(maindiv);
 };
