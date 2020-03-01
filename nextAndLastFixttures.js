@@ -6,6 +6,7 @@ const tableDiv2 = document.querySelector(".lastFixtures");
 dispFixtures = (fixtures, tableDiv) => {
   const maindiv = document.createElement("div");
   const head = document.createElement("div");
+  head.className = "cen";
 
   head.appendChild(document.createTextNode("Next Fixyture"));
 
@@ -108,6 +109,7 @@ dispLastFixtures = (fixtures, tableDiv) => {
   const maindiv = document.createElement("div");
 
   const head = document.createElement("div");
+  head.className = "cen";
 
   head.appendChild(document.createTextNode("Last Fixyture"));
 
