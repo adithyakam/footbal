@@ -13,6 +13,18 @@ nextfixture = team_id => {
     .catch(err => console.log(err));
 };
 
+prevfixture = team_id => {
+  console.log(team_id);
+  fetch(
+    `https://www.thesportsdb.com/api/v1/json/1/eventslast.php?id=${team_id}`
+  )
+    .then(ele => ele.json())
+    .then(res => {
+      console.log(res);
+    })
+    .catch(err => console.log(err));
+};
+
 Team = teams => {
   let arr = [];
   teams.forEach(ele => {
@@ -29,6 +41,7 @@ getTeamId = name => {
       let team_id = Team(team.teams);
       console.log(team_id);
       nextfixture(team_id);
+      prevfixture(team_id);
     })
     .catch(err => console.log(err));
 };
