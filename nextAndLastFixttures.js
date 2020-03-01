@@ -91,7 +91,7 @@ dispFixtures = (fixtures, tableDiv) => {
       .appendChild(localTime);
 
     con.style.border = "1px solid black";
-    con.style.width = "100%";
+    con.style.width = "80%";
 
     container.appendChild(con);
 
@@ -196,7 +196,7 @@ dispLastFixtures = (fixtures, tableDiv) => {
       .appendChild(timeDIv);
 
     con.style.border = "1px solid black";
-    con.style.width = "100%";
+    con.style.width = "80%";
 
     container.appendChild(con);
 
