@@ -103,6 +103,7 @@ dispFixtures = (fixtures, tableDiv) => {
     maindiv.appendChild(container);
   });
   tableDiv.appendChild(head).appendChild(maindiv);
+  tableDiv.style.width = "50%";
 };
 
 dispLastFixtures = (fixtures, tableDiv) => {
@@ -209,6 +210,7 @@ dispLastFixtures = (fixtures, tableDiv) => {
     maindiv.appendChild(container);
   });
   tableDiv.appendChild(head).appendChild(maindiv);
+  tableDiv.style.width = "50%";
 };
 
 nextfixture = team_id => {
