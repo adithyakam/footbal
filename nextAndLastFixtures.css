@@ -1,3 +1,28 @@
-body{
-    background-color: yellow;
+body {
+  background-color: yellow;
+}
+
+.nextFixtures {
+  float: left;
+  background-color: yellowgreen;
+}
+
+.lastFixtures {
+  float: right;
+  background-color: teal;
+}
+
+.imag {
+  height: 8%;
+  width: 8%;
+}
+
+.font {
+  background-color: yellow;
+  font: 3rem;
+}
+
+.cen {
+  text-align: center;
+  margin: auto auto;
 }
