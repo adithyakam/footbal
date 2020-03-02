@@ -1,5 +1,4 @@
- https://www.thesportsdb.com/api/v1/json/1/search_all_leagues.php?c=England&s=Soccer --->for all leagues 
-https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=Arsenal ----> team
+
 https://www.thesportsdb.com/api/v1/json/{APIKEY}/searchteams.php?sname={TeamShortCode}
 
 
@@ -13,12 +12,19 @@ https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=133604    ----- team
 https://www.thesportsdb.com/api/v1/json/1/lookuphonors.php?id=34147178 player honors by ID
 
 finished{
+     https://www.thesportsdb.com/api/v1/json/1/search_all_leagues.php?c=England&s=Soccer --->for all leagues 
+    https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=Arsenal ----> team
     https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=Danny%20Welbeck
 
     https://www.thesportsdb.com/api/v1/json/1/lookuptable.php?l=4328&s=1819
     https://www.thesportsdb.com/api/v1/json/1/lookuptable.php?l=4328&s=1213 ----> lookup table by league id and season 
 
     https://www.thesportsdb.com/api/v1/json/1/eventsnextleague.php?id=4328 next 15 events by leagueID
+    
+https://www.thesportsdb.com/api/v1/json/1/eventsnext.php?id=133602 necxt 5 event by team id
+
+
+https://www.thesportsdb.com/api/v1/json/1/eventslast.php?id=133602  last 5event by team id
 
     
 Original Image - https://www.thesportsdb.com/images/media/league/fanart/xpwsrw1421853005.jpg
@@ -26,10 +32,6 @@ Small 250px Image - https://www.thesportsdb.com/images/media/league/fanart/xpwsr
 
 }
 
-https://www.thesportsdb.com/api/v1/json/1/eventsnext.php?id=133602 necxt 5 event by team id
-
-
-https://www.thesportsdb.com/api/v1/json/1/eventslast.php?id=133602  last 5event by team id
 
 
 
