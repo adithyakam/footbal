@@ -22,7 +22,7 @@ html {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
   color: rgb(221, 243, 217);
-  border: 3px solid #f1f1f1;
+  border: 3px solid rgb(221, 243, 217);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -47,7 +47,7 @@ a {
   outline: 0;
   font-size: 1.5rem;
   border: 2px solid f542a5;
-  background-color: white;
+  background-color: rgb(221, 243, 217);
   color: black;
   border-radius: 25px;
   padding: 0.5rem;
@@ -57,7 +57,7 @@ a {
 
 a:hover {
   background-color: #f542a5;
-  color: white;
+  color: rgb(221, 243, 217);
   text-decoration: none;
   font-weight: bold;
 }
