@@ -23,7 +23,6 @@ Standings = (teams, tableDiv) => {
     "total"
   ].forEach(function(el) {
     var th = document.createElement("th");
-    th.className = "center";
     th.appendChild(document.createTextNode(el));
     headRow.appendChild(th);
   });
@@ -42,7 +41,6 @@ Standings = (teams, tableDiv) => {
       } else {
         var tbltd = document.createElement("td");
         tbltd.appendChild(document.createTextNode(team[o]));
-        tbltd.className = "center";
         tblrw.appendChild(tbltd);
       }
     }
