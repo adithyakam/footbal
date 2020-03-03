@@ -7,27 +7,3 @@ body {
   font-family: "poppins", sans-serif;
   text-decoration: none;
 }
-
-table.gridtable {
-  font-size: 11px;
-  color: #333333;
-  border-width: 1px;
-  border-color: #666666;
-  border-collapse: collapse;
-}
-table.gridtable th {
-  border-width: 1px;
-  padding: 8px;
-  font-weight: bold;
-  font: 1rem;
-  border-style: solid;
-  border-color: #666666;
-  background-color: #f542a5;
-}
-table.gridtable td {
-  border-width: 1px;
-  padding: 8px;
-  border-style: solid;
-  border-color: #666666;
-  background-color: rgb(221, 243, 217);
-}

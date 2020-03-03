@@ -6,7 +6,7 @@ Standings = (teams, tableDiv) => {
   tableDiv.innerHTML = "";
 
   var table = document.createElement("table");
-  table.className = "table table-hover";
+  table.className = "table table-sm table-hover table-bordered table-striped";
   var tblbdy = document.createElement("tbody");
 
   var thead = document.createElement("thead");
@@ -23,13 +23,17 @@ Standings = (teams, tableDiv) => {
     "total"
   ].forEach(function(el) {
     var th = document.createElement("th");
+    th.className = "center";
     th.appendChild(document.createTextNode(el));
     headRow.appendChild(th);
   });
+  thead.className = "bg-success";
   thead.appendChild(headRow);
   table.appendChild(thead);
+
   teams.forEach(team => {
     var tblrw = document.createElement("tr");
+    tblrw.className = "table-success";
     let i = 0;
     for (var o in team) {
       i++;
@@ -38,6 +42,7 @@ Standings = (teams, tableDiv) => {
       } else {
         var tbltd = document.createElement("td");
         tbltd.appendChild(document.createTextNode(team[o]));
+        tbltd.className = "center";
         tblrw.appendChild(tbltd);
       }
     }
