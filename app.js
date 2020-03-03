@@ -1,1 +1,0 @@
-alert("site isstill under way Not yet mobile-friendly")
