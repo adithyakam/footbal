@@ -1,11 +1,12 @@
 const button = document.querySelector(".standing");
 const tableDiv = document.querySelector(".Standing_table");
+tableDiv.className = "table-responsive-md";
 
 Standings = (teams, tableDiv) => {
   tableDiv.innerHTML = "";
 
   var table = document.createElement("table");
-  table.className = "gridtable";
+  table.className = "table table-hover";
   var tblbdy = document.createElement("tbody");
 
   var thead = document.createElement("thead");

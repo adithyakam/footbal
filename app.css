@@ -1,5 +1,14 @@
+html,
+body {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  background: rgb(250, 250, 250);
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
+}
+
 table.gridtable {
-  font-family: verdana, arial, sans-serif;
   font-size: 11px;
   color: #333333;
   border-width: 1px;
@@ -9,14 +18,16 @@ table.gridtable {
 table.gridtable th {
   border-width: 1px;
   padding: 8px;
+  font-weight: bold;
+  font: 1rem;
   border-style: solid;
   border-color: #666666;
-  background-color: #dedede;
+  background-color: #f542a5;
 }
 table.gridtable td {
   border-width: 1px;
   padding: 8px;
   border-style: solid;
   border-color: #666666;
-  background-color: #ffffff;
+  background-color: rgb(221, 243, 217);
 }
