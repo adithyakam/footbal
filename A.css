@@ -94,20 +94,8 @@ body {
   font-size: 0.8em;
 }
 
-.fadeIn-bottom {
-  top: 80%;
-}
-
 .fadeIn-top {
   top: 20%;
-}
-
-.fadeIn-left {
-  left: 20%;
-}
-
-.fadeIn-right {
-  left: 80%;
 }
 
 a:link {
@@ -128,6 +116,6 @@ a:hover {
 }
 
 a:active {
-  color: beige;
+  color: #f542a5;
   text-decoration: none;
 }
