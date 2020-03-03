@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <head>
     <title>football</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="nextFixture.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
-<link rel="stylesheet" href="nextFixture.css">
 
-<body>
-    <h1>get next 15 fixturs of the league</h1>   
-    <p></p> 
-<form >
-        <select name="id">
-            <option value="4328">EPL</option>
-            <option value="4335">laliga</option>
-            <option value="4331">bundesliga</option>
-            <option value="4332">SeriaA</option>
-            <option value="4334">liguwe 1</option>
-            <option vale="4337">Erdivision</option>
-            <option value="4346">MLS</option>
-        </select>
-<button type="submit" class="submit">submit</button>
-    </form>
+<body>   
+    <h1 class="text-danger"> 15 next fixturs</h1>   
+    <form>
+        <div class="form-row align-items-center">
+          <div class="col-auto my-1">
+            <select class="form-control" name="id">
+                <option value="4328">EPL</option>
+                <option value="4335">laliga</option>
+                <option value="4331">bundesliga</option>
+                <option value="4332">SeriaA</option>
+                <option value="4334">liguwe 1</option>
+                <option vale="4337">Erdivision</option>
+                <option value="4346">MLS</option>
+            </select>
+          </div>
+          <div class="col-auto my-1">
+            <button type="submit" class="submit btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
     <div class="nfixtures">
 
     </div>

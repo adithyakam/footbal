@@ -1,5 +1,11 @@
+html,
 body {
+  margin: 0;
+  border: 0;
   box-sizing: border-box;
+  background: rgb(250, 250, 250);
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
 }
 .imag {
   height: 8%;
@@ -11,7 +17,26 @@ body {
   font: 3rem;
 }
 
-.cen {
-  text-align: center;
-  margin: auto auto;
+@media (max-width: 575.98px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 767.98px) and (min-width: 575.98px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 991.98px) and (min-width: 767.98px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1199.98px) and (min-width: 991.98px) {
+  body {
+    font-size: 1.2rem;
+  }
 }

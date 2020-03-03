@@ -69,8 +69,7 @@ nextFixtures = (fixtures, tableDiv) => {
       document.createTextNode("Local TIme: " + fixture.strTimeLocal)
     );
 
-    DateDiv.className = "cen";
-    con.className = "cen";
+    // DateDiv.className = "text-center";
 
     imgDiv.appendChild(img1);
     imgDiv2.appendChild(img2);
@@ -80,18 +79,16 @@ nextFixtures = (fixtures, tableDiv) => {
 
     imgDiv.appendChild(textDiv2);
 
-    con
-      .appendChild(imgDiv)
+    imgDiv
       .appendChild(DateDiv)
       .appendChild(timeDIv)
       .appendChild(localTime);
 
-    con.style.border = "1px solid black";
-    con.style.width = "30%";
+    con.appendChild(imgDiv);
+    con.className = "mx-auto text-center container border border-dark";
+    container.className = "mx-auto text-center container";
 
     container.appendChild(con);
-
-    container.style.margin = "auto auto";
 
     container.style.margin = "1.5rem";
 
