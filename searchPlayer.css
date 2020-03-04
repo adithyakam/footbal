@@ -1,8 +1,31 @@
+html,
+body {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  background: rgb(221, 243, 217);
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
+}
+
 .btnToggle {
   font-weight: bold;
   background-color: yellow;
 }
 
-body {
-  background-color: yellowgreen;
+.col {
+  background-color: rgb(165, 241, 170);
+}
+
+.btn-primary {
+  background-color: #f542a5;
+  border: 1px solid #f542a5;
+}
+.imag {
+  height: 8%;
+  width: 8%;
+}
+
+.font {
+  font: 3rem;
 }

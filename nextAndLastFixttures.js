@@ -243,10 +243,28 @@ getTeamId = name => {
   fetch(`https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=${name}`)
     .then(res => res.json())
     .then(team => {
-      let team_id = Team(team.teams);
-      console.log(team_id);
-      nextfixture(team_id);
-      prevfixture(team_id);
+      if (team.teams == null) {
+        const divq = document.createElement("div");
+        tableDiv.innerHTML = "";
+        tableDiv2.innerHTML = "";
+
+        divq.appendChild(document.createTextNode("No team FOund"));
+        tableDiv.appendChild(divq);
+      } else {
+        let team_id = Team(team.teams);
+        if (team_id == "137970") {
+          const divq = document.createElement("div");
+          tableDiv.innerHTML = "";
+          tableDiv2.innerHTML = "";
+
+          divq.appendChild(document.createTextNode("No team FOund"));
+          tableDiv.appendChild(divq);
+        } else {
+          console.log(team_id);
+          nextfixture(team_id);
+          prevfixture(team_id);
+        }
+      }
     })
     .catch(err => console.log(err));
 };

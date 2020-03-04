@@ -5,12 +5,14 @@ const player = (players, searchDiv) => {
   const mainDiv = document.createElement("div");
   if (players == null) {
     const divq = document.createElement("div");
+    searchDiv.innerHTML = "";
 
     divq.appendChild(document.createTextNode("No player FOund"));
     searchDiv.appendChild(divq);
   } else {
     players.forEach(player => {
       searchDiv.innerHTML = "";
+      searchDiv.className = "container  font-weight-bold";
 
       const img = document.createElement("img");
       const imgDiv = document.createElement("div");
@@ -52,6 +54,8 @@ const player = (players, searchDiv) => {
         .appendChild(ht)
         .appendChild(wg);
 
+      imgDiv.className = "mx-auto my-2 container border border-dark";
+
       mainDiv.appendChild(imgDiv);
 
       searchDiv.appendChild(mainDiv);
@@ -70,7 +74,20 @@ button.addEventListener("click", e => {
   fetch(`https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=${name}`)
     .then(res => res.json())
     .then(res => {
-      player(res.player, searchDiv);
+      if (res.player == null) {
+        const divq = document.createElement("div");
+        searchDiv.innerHTML = "";
+        divq.appendChild(document.createTextNode("No player FOund"));
+        searchDiv.appendChild(divq);
+      } else {
+        let playyer = [];
+        for (let i = 0; i < res.player.length; i++) {
+          if (res.player[i].strSport == "Soccer") {
+            playyer.push(res.player[i]);
+          }
+        }
+        player(playyer, searchDiv);
+      }
     })
     .catch(err => console.log(err));
 });
