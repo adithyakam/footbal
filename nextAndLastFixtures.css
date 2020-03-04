@@ -1,28 +1,66 @@
+html,
 body {
-  background-color: yellow;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  background: rgb(221, 243, 217);
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
 }
 
 .nextFixtures {
   float: left;
-  background-color: yellowgreen;
+  width: 49%;
 }
 
 .lastFixtures {
   float: right;
-  background-color: teal;
+  width: 49%;
+}
+.col {
+  background-color: rgb(165, 241, 170);
 }
 
+.btn-primary {
+  background-color: #f542a5;
+  border: 1px solid #f542a5;
+}
 .imag {
   height: 8%;
   width: 8%;
 }
 
 .font {
-  background-color: yellow;
   font: 3rem;
 }
 
-.cen {
-  text-align: center;
-  margin: auto auto;
+@media (max-width: 575.98px) {
+  body {
+    font-size: 0.9rem;
+  }
+  .nextFixtures {
+    width: 100%;
+  }
+
+  .lastFixtures {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) and (min-width: 575.98px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 991.98px) and (min-width: 767.98px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1199.98px) and (min-width: 991.98px) {
+  body {
+    font-size: 1.2rem;
+  }
 }

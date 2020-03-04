@@ -3,9 +3,13 @@ body {
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  background: rgb(250, 250, 250);
+  background: rgb(221, 243, 217);
   font-family: "poppins", sans-serif;
   text-decoration: none;
+}
+.btn-primary {
+  background-color: #f542a5;
+  border: 1px solid #f542a5;
 }
 .imag {
   height: 8%;
@@ -13,7 +17,6 @@ body {
 }
 
 .font {
-  background-color: yellow;
   font: 3rem;
 }
 

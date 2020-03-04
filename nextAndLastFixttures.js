@@ -6,9 +6,9 @@ const tableDiv2 = document.querySelector(".lastFixtures");
 dispFixtures = (fixtures, tableDiv) => {
   const maindiv = document.createElement("div");
   const head = document.createElement("div");
-  head.className = "cen";
+  head.className = "mx-auto text-center  font-weight-bold";
 
-  head.appendChild(document.createTextNode("Next Fixyture"));
+  head.appendChild(document.createTextNode("Next 5 Fixtures "));
 
   fixtures.forEach(fixture => {
     tableDiv.innerHTML = "";
@@ -74,9 +74,6 @@ dispFixtures = (fixtures, tableDiv) => {
       document.createTextNode("Local TIme: " + fixture.strTimeLocal)
     );
 
-    DateDiv.className = "cen";
-    con.className = "cen";
-
     imgDiv.appendChild(img1);
     imgDiv2.appendChild(img2);
 
@@ -85,34 +82,34 @@ dispFixtures = (fixtures, tableDiv) => {
 
     imgDiv.appendChild(textDiv2);
 
-    con
-      .appendChild(imgDiv)
+    imgDiv
       .appendChild(DateDiv)
       .appendChild(timeDIv)
       .appendChild(localTime);
 
-    con.style.border = "1px solid black";
-    con.style.width = "80%";
+    con.appendChild(imgDiv);
+
+    con.appendChild(imgDiv);
+    con.className = "mx-auto text-center container border border-dark";
+    container.className = "mx-auto text-center container";
 
     container.appendChild(con);
-
-    container.style.margin = "auto auto";
 
     container.style.margin = "1.5rem";
 
     maindiv.appendChild(container);
+    maindiv.className = " py-1 col border border-dark mx-auto";
   });
   tableDiv.appendChild(head).appendChild(maindiv);
-  tableDiv.style.width = "50%";
 };
 
 dispLastFixtures = (fixtures, tableDiv) => {
   const maindiv = document.createElement("div");
 
   const head = document.createElement("div");
-  head.className = "cen";
+  head.className = "mx-auto text-center  font-weight-bold";
 
-  head.appendChild(document.createTextNode("Last Fixyture"));
+  head.appendChild(document.createTextNode("Last 5 Fixtures"));
 
   fixtures.forEach(fixture => {
     tableDiv.innerHTML = "";
@@ -181,9 +178,6 @@ dispLastFixtures = (fixtures, tableDiv) => {
       )
     );
 
-    DateDiv.className = "cen";
-    con.className = "cen";
-
     imgDiv.appendChild(img1);
     imgDiv2.appendChild(img2);
 
@@ -192,25 +186,24 @@ dispLastFixtures = (fixtures, tableDiv) => {
 
     imgDiv.appendChild(textDiv2);
 
-    con
-      .appendChild(imgDiv)
+    imgDiv
       .appendChild(result)
       .appendChild(DateDiv)
       .appendChild(timeDIv);
 
-    con.style.border = "1px solid black";
-    con.style.width = "80%";
+    con.appendChild(imgDiv);
+
+    con.className = "mx-auto text-center container border border-dark";
+    container.className = "mx-auto text-center container";
 
     container.appendChild(con);
-
-    container.style.margin = "auto auto";
 
     container.style.margin = "1.5rem";
 
     maindiv.appendChild(container);
+    maindiv.className = " py-1 col border border-dark mx-auto";
   });
   tableDiv.appendChild(head).appendChild(maindiv);
-  tableDiv.style.width = "50%";
 };
 
 nextfixture = team_id => {

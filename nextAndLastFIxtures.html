@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <head>
     <title>football</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="nextAndLastFixtures.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
 </head>
 
 <link rel="stylesheet" href="nextAndLastFixtures.css">
@@ -8,11 +13,12 @@
 <body>
     <h1>Enter team </h1>   
     <p></p>
-    <form>
-        <input type="text" placeholder="Enter the team name">
-        <button type="submit">Search</button>
-    </form>
-
+    <form class="form-inline">
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Type team name">
+      
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </form>
 
     <div class="nextFixtures">
         

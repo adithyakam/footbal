@@ -3,6 +3,7 @@ const tableDiv = document.querySelector(".nfixtures");
 
 nextFixtures = (fixtures, tableDiv) => {
   const maindiv = document.createElement("div");
+  tableDiv.className = "mx-auto text-center  font-weight-bold";
 
   fixtures.forEach(fixture => {
     tableDiv.innerHTML = "";
@@ -68,8 +69,6 @@ nextFixtures = (fixtures, tableDiv) => {
     localTime.appendChild(
       document.createTextNode("Local TIme: " + fixture.strTimeLocal)
     );
-
-    // DateDiv.className = "text-center";
 
     imgDiv.appendChild(img1);
     imgDiv2.appendChild(img2);
